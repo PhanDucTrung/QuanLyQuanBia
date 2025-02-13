@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="quanly_quan_bi_aDataSet1" targetNamespace="http://tempuri.org/quanly_quan_bi_aDataSet1.xsd" xmlns:mstns="http://tempuri.org/quanly_quan_bi_aDataSet1.xsd" xmlns="http://tempuri.org/quanly_quan_bi_aDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="quanly_quan_bi_aConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="quanly_quan_bi_aConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyQuanBia.Properties.Settings.GlobalReference.Default.quanly_quan_bi_aConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="quanly_quan_bi_aDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="quanly_quan_bi_aDataSet1" msprop:Generator_DataSetName="quanly_quan_bi_aDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

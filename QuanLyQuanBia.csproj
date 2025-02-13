@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{565A1E44-E982-45DC-A9A3-248D363A9572}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyQuanBia</RootNamespace>
+    <AssemblyName>QuanLyQuanBia</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BillarBar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\QLKhachSan\QLKhachSan\bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=7.0.0.3, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.7.0.0\lib\net462\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.Interfaces.6.1.1\lib\net462\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>packages\EPPlus.System.Drawing.6.1.1\lib\net462\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=2.3.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.IO.RecyclableMemoryStream.2.3.2\lib\net462\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassHelper\Common.cs" />
+    <Compile Include="ClassHelper\DatabaseHelper.cs" />
+    <Compile Include="ClassHelper\DatagridviewHelper.cs" />
+    <Compile Include="ClassHelper\JSON_Settings.cs" />
+    <Compile Include="ClassHelper\SettingsTool.cs" />
+    <Compile Include="formHelper\fBan\fThemBanMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fBan\fThemBanMoi.Designer.cs">
+      <DependentUpon>fThemBanMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fBan\ItemBan.cs" />
+    <Compile Include="formHelper\fBan\ItemBilliards.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="formHelper\fBan\ItemBilliards.Designer.cs">
+      <DependentUpon>ItemBilliards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fBieuDo\fBieuDO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fBieuDo\fBieuDO.Designer.cs">
+      <DependentUpon>fBieuDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fBieuDo\fBieuDoNgoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fBieuDo\fBieuDoNgoai.Designer.cs">
+      <DependentUpon>fBieuDoNgoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fkho\fLichSuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fkho\fLichSuNhap.Designer.cs">
+      <DependentUpon>fLichSuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fLichSu\fChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fLichSu\fChiTietHoaDon.Designer.cs">
+      <DependentUpon>fChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fLogin\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fLogin\fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\fAddFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\fAddFood.Designer.cs">
+      <DependentUpon>fAddFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fkhachhang\faddKhachHangNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fkhachhang\faddKhachHangNew.Designer.cs">
+      <DependentUpon>faddKhachHangNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fBan\fbookMenuBookTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fBan\fbookMenuBookTable.Designer.cs">
+      <DependentUpon>fbookMenuBookTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassHelper\MessageBoxHelper.cs" />
+    <Compile Include="formHelper\fkhachhang\fQLKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fkhachhang\fQLKhachHang.Designer.cs">
+      <DependentUpon>fQLKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fkho\fKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fkho\fKho.Designer.cs">
+      <DependentUpon>fKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fkho\fXuatFileKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fkho\fXuatFileKho.Designer.cs">
+      <DependentUpon>fXuatFileKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fLichSu\fHistoryDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fLichSu\fHistoryDesk.Designer.cs">
+      <DependentUpon>fHistoryDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\fTableStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\fTableStatus.Designer.cs">
+      <DependentUpon>fTableStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\ItemSP\ItemSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\ItemSP\ItemSanPham.designer.cs">
+      <DependentUpon>ItemSanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fsanpham\ItemSP\ListSanPhamHelper.cs" />
+    <Compile Include="formHelper\nhanvien\fChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\nhanvien\fChamCong.Designer.cs">
+      <DependentUpon>fChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\nhanvien\fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\nhanvien\fNhanVien.Designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formHelper\fkho\fPhieuNhapMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formHelper\fkho\fPhieuNhapMoi.Designer.cs">
+      <DependentUpon>fPhieuNhapMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quanly_quan_bi_aDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quanly_quan_bi_aDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="formHelper\fBan\fThemBanMoi.resx">
+      <DependentUpon>fThemBanMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fBan\ItemBilliards.resx">
+      <DependentUpon>ItemBilliards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fBieuDo\fBieuDO.resx">
+      <DependentUpon>fBieuDO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fBieuDo\fBieuDoNgoai.resx">
+      <DependentUpon>fBieuDoNgoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fkho\fLichSuNhap.resx">
+      <DependentUpon>fLichSuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fLichSu\fChiTietHoaDon.resx">
+      <DependentUpon>fChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fLogin\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fsanpham\fAddFood.resx">
+      <DependentUpon>fAddFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fkhachhang\faddKhachHangNew.resx">
+      <DependentUpon>faddKhachHangNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fBan\fbookMenuBookTable.resx">
+      <DependentUpon>fbookMenuBookTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fkhachhang\fQLKhachHang.resx">
+      <DependentUpon>fQLKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fkho\fKho.resx">
+      <DependentUpon>fKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fkho\fXuatFileKho.resx">
+      <DependentUpon>fXuatFileKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fLichSu\fHistoryDesk.resx">
+      <DependentUpon>fHistoryDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fsanpham\fTableStatus.resx">
+      <DependentUpon>fTableStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fsanpham\ItemSP\ItemSanPham.resx">
+      <DependentUpon>ItemSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\nhanvien\fChamCong.resx">
+      <DependentUpon>fChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\nhanvien\fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formHelper\fkho\fPhieuNhapMoi.resx">
+      <DependentUpon>fPhieuNhapMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="quanly_quan_bi_aDataSet1.xsc">
+      <DependentUpon>quanly_quan_bi_aDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="quanly_quan_bi_aDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>quanly_quan_bi_aDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="quanly_quan_bi_aDataSet1.xss">
+      <DependentUpon>quanly_quan_bi_aDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BillarBar.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
